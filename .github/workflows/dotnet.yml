@@ -1,11 +1,12 @@
-name: .NET
+name: 爪巴
 
 on:
   schedule:
     - cron:  '0 17 * * *'
+  push:
 
 jobs:
-  build:
+  Run:
 
     runs-on: windows-latest
 
