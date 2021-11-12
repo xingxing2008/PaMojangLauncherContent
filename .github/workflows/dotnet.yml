@@ -19,7 +19,7 @@ jobs:
     - name: Clear Previous
       run: |
         del -- *.jepg
-        del -- *.json
+        del -- news.json
     - name: Run Application
       run: .\PaMojangLaucherContent.Re.exe
     - name: Commit files
