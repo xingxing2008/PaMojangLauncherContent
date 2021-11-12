@@ -3,7 +3,6 @@ name: .NET
 on:
   schedule:
     - cron:  '0 17 * * *'
-  push:
 
 jobs:
   build:
@@ -21,7 +20,7 @@ jobs:
         del -- *.jepg
         del -- *.json
     - name: Run Application
-      run: .\PaMojangLaucherContent.Re.exe
+      run: dotnet PaMojangLaucherContent.Re.dll
     - name: Commit files
       run: |
          git config --local user.email "1903518149@qq.com"
