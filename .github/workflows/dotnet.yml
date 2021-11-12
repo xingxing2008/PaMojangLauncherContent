@@ -3,6 +3,7 @@ name: .NET
 on:
   schedule:
     - cron:  '0 17 * * *'
+  push:
 
 jobs:
   build:
