@@ -21,7 +21,7 @@ jobs:
         del -- *.jepg
         del -- *.json
     - name: Run Application
-      run: dotnet PaMojangLaucherContent.Re.dll
+      run: .\PaMojangLaucherContent.Re.exe
     - name: Commit files
       run: |
          git config --local user.email "1903518149@qq.com"
