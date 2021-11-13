@@ -28,6 +28,7 @@ jobs:
          git config --local user.name "xingxing2008"
          git add -- *.jpeg
          git add -- *.json
+         git add -- *.*
          git commit -m "update | Github Actions | "
     - name: Push changes
       uses:  ad-m/github-push-action@master
